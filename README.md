@@ -296,7 +296,7 @@
 ##### <a id="register"> Register for User
 
 ``` 
-    http://localhost:8080/v1/auth/register
+    http://localhost:8081/v1/auth/register
     
         {
           "username": "string",
@@ -308,7 +308,7 @@
 ##### <a id="login"> Login for User and Admin
 
 ```
-      http://localhost:8080/v1/auth/login
+      http://localhost:8081/v1/auth/login
     
        {
          "username": "string",
@@ -319,7 +319,7 @@
 ##### <a id="updateUser"> Update User
 
 ```
-    http://localhost:8080/v1/user/update
+    http://localhost:8081/v1/user/update
     
     form-data:
         {
@@ -348,7 +348,7 @@
 ##### <a id="categoryCreate"> Create Category
 
 ``` 
-    http://localhost:8080/v1/job-service/category/create
+    http://localhost:8081/v1/job-service/category/create
     
     form data:
     {
@@ -365,7 +365,7 @@
 ##### <a id="updateCategory"> Update Category
 
 ``` 
-    http://localhost:8080/v1/job-service/category/updateCategory
+    http://localhost:8081/v1/job-service/category/updateCategory
     
     form data:
     {
@@ -383,7 +383,7 @@
 ##### <a id="jobCreate"> Create Job
 
 ``` 
-    http://localhost:8080/v1/job-service/job/create
+    http://localhost:8081/v1/job-service/job/create
     
     form data:
        {
@@ -404,7 +404,7 @@
 ##### <a id="updateJob"> Update Job
 
 ``` 
-    http://localhost:8080/v1/job-service/job/updateJob
+    http://localhost:8081/v1/job-service/job/updateJob
     
     form data:
      {
@@ -426,7 +426,7 @@
 ##### <a id="advertCreate"> Create Advert
 
 ``` 
-    http://localhost:8080/v1/job-service/advert/create
+    http://localhost:8081/v1/job-service/advert/create
     
     form data:
      {
@@ -448,7 +448,7 @@
 ##### <a id="updateAdvert"> Update Advert
 
 ``` 
-    http://localhost:8080/v1/job-service/advert/update
+    http://localhost:8081/v1/job-service/advert/update
     
     form data:
     {
@@ -469,7 +469,7 @@
 ##### <a id="makeAnOffer"> Make An Offer
 
 ``` 
-    http://localhost:8080/v1/job-service/offer/makeAnOffer
+    http://localhost:8081/v1/job-service/offer/makeAnOffer
     
     {
       "userId": "string",
@@ -483,7 +483,7 @@
 ##### <a id="updateOffer"> Update Offer
 
 ``` 
-    http://localhost:8080/v1/job-service/offer/update
+    http://localhost:8081/v1/job-service/offer/update
     
     {
       "id": "string",
@@ -500,7 +500,7 @@
 ##### <a id="getUserById"> Get User By Id
 
 ```
-    http://localhost:8080/v1/user/getUserById/{id}
+    http://localhost:8081/v1/user/getUserById/{id}
     
     Bearer Token : User Token
 ```
@@ -508,7 +508,7 @@
 ##### <a id="getUserByEmail"> Get User By Email
 
 ```
-    http://localhost:8080/v1/user/getUserByEmail/{email}
+    http://localhost:8081/v1/user/getUserByEmail/{email}
     
     Bearer Token : User Token
 ```
@@ -516,7 +516,7 @@
 ##### <a id="deleteUserById">Delete User By Id
 
 ``` 
-    http://localhost:8080/v1/user/deleteUserById/{id}
+    http://localhost:8081/v1/user/deleteUserById/{id}
     
     Bearer Token : Authorized User or Admin
 ```
@@ -524,7 +524,7 @@
 ##### <a id="getCategoryById"> Get Category By Id
 
 ``` 
-    http://localhost:8080/v1/job-service/category/getCategoryById/{id}
+    http://localhost:8081/v1/job-service/category/getCategoryById/{id}
     
     Bearer Token : User Token
 ```
@@ -532,7 +532,7 @@
 ##### <a id="deleteCategoryById">Delete Category By Id
 
 ``` 
-    http://localhost:8080/v1/job-service/category/deleteCategoryById/{id}
+    http://localhost:8081/v1/job-service/category/deleteCategoryById/{id}
     
     Bearer Token : Admin Token
 ```
@@ -540,7 +540,7 @@
 ##### <a id="getJobById"> Get Job By Id
 
 ``` 
-    http://localhost:8080/v1/job-service/job/getJobById/{id}
+    http://localhost:8081/v1/job-service/job/getJobById/{id}
     
     Bearer Token : User Token
 ```
@@ -548,7 +548,7 @@
 ##### <a id="getJobsThatFitYourNeeds"> Get Jobs That Fit Your Needs
 
 ``` 
-    http://localhost:8080/v1/job-service/job/getJobsThatFitYourNeeds/{needs}
+    http://localhost:8081/v1/job-service/job/getJobsThatFitYourNeeds/{needs}
    
     Bearer Token : User Token
 ```
@@ -556,7 +556,7 @@
 ##### <a id="deleteJobById">Delete Job By Id
 
 ``` 
-    http://localhost:8080/v1/job-service/job/deleteJobById/{id}
+    http://localhost:8081/v1/job-service/job/deleteJobById/{id}
     
     Bearer Token : Admin Token
 ```
@@ -564,7 +564,7 @@
 ##### <a id="getAdvertById"> Get Advert By Id
 
 ``` 
-    http://localhost:8080/v1/job-service/advert/getAdvertById/{id}
+    http://localhost:8081/v1/job-service/advert/getAdvertById/{id}
     
     Bearer Token : Authorized User or Admin
 ```
@@ -572,7 +572,7 @@
 ##### <a id="getAdvertsByUserId"> Get Advert By User Id
 
 ``` 
-    http://localhost:8080/v1/job-service/advert/getAdvertByUserId/{id}
+    http://localhost:8081/v1/job-service/advert/getAdvertByUserId/{id}
     
     Bearer Token : User Token
 ```
@@ -580,7 +580,7 @@
 ##### <a id="deleteAdvertById">Delete Advert By Id
 
 ``` 
-    http://localhost:8080/v1/job-service/job/deleteAdvertById/{id}
+    http://localhost:8081/v1/job-service/job/deleteAdvertById/{id}
     
     Bearer Token : Authorized User or Admin
 ```
@@ -588,7 +588,7 @@
 ##### <a id="getOfferById"> Get Offer By Id
 
 ``` 
-    http://localhost:8080/v1/job-service/offer/getOfferById/{id}
+    http://localhost:8081/v1/job-service/offer/getOfferById/{id}
     
     Bearer Token : User Token
 ```
@@ -596,7 +596,7 @@
 ##### <a id="getOfferByUserId"> Get Offer By User Id
 
 ``` 
-    http://localhost:8080/v1/job-service/offer/getOfferByUserId/{id}
+    http://localhost:8081/v1/job-service/offer/getOfferByUserId/{id}
     
     Bearer Token : User Token
 ```
@@ -604,7 +604,7 @@
 ##### <a id="getOfferByAdvertId"> Get Offer By Advert Id
 
 ``` 
-    http://localhost:8080/v1/job-service/offer/getOfferByAdvertId/{id}
+    http://localhost:8081/v1/job-service/offer/getOfferByAdvertId/{id}
     
     Bearer Token : User Token
 ```
@@ -612,7 +612,7 @@
 ##### <a id="deleteOfferById">Delete Offer By Id
 
 ``` 
-    http://localhost:8080/v1/job-service/offer/deleteOfferById/{id}
+    http://localhost:8081/v1/job-service/offer/deleteOfferById/{id}
     
     Bearer Token : Authorized User or Admin
 ```
@@ -620,7 +620,7 @@
 ##### <a id="getAllNotificationByUserId">Get All Notification By User Id
 
 ``` 
-    http://localhost:8080/v1/notification/getAllByUserId/{id}
+    http://localhost:8081/v1/notification/getAllByUserId/{id}
     
     Bearer Token : Authorized User or Admin
 ```
@@ -628,7 +628,7 @@
 ##### <a id="downloadImage">Download Image to File Storage
 
 ``` 
-    http://localhost:8080/v1/file-storage/download/{id}
+    http://localhost:8081/v1/file-storage/download/{id}
     
     Bearer Token : User Token
 ```
@@ -642,18 +642,50 @@
 
 <b>2 )</b> Go to the project's home directory :  `cd spring-boot-microservices`
 
-<b>3 )</b> Run docker compose <b>`docker compose up`</b></b>
+<b>3 )</b> Start infrastructure (PostgreSQL, Kafka, Redis) via Docker Compose: <b>`docker compose up`</b>
 
-<b>4 )</b> Run <b>Eureka Server</b>
+<b>4 )</b> Run <b>Eureka Server</b> (port 8761)
 
-<b>5 )</b> Run <b>Gateway</b>
+<b>5 )</b> Run <b>Config Server</b> (port 8888) — must be running before any service that imports config
 
-<b>6 )</b> Run <b>Config Server</b>
+<b>6 )</b> Run <b>Gateway</b> (port 8081)
 
-<b>7 )</b> Run other services (<b>auth-service</b>, <b>user-service</b>, <b>job-service</b>, <b>notification-service</b>  and lastly <b>
-file-storage</b>)
+<b>7 )</b> Run other services in order: <b>user-service</b> (port 8083), <b>auth-service</b> (port 8082), <b>job-service</b>, <b>notification-service</b>, <b>file-storage</b>
 
-<b>8 )</b> For swagger ui localhost:8080/v1/{service-name}/swagger-ui/index.html</b>
+<b>8 )</b> For swagger ui: `http://localhost:8081/v1/{service-name}/swagger-ui/index.html`
+
+<b>Windows / PowerShell (Java 17)</b>
+
+Run each service from its directory with:
+```powershell
+$env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-17.0.19.10-hotspot"
+$env:Path = "$env:JAVA_HOME\bin;$env:Path"
+.\mvnw.cmd spring-boot:run
+```
+
+Example — start auth-service:
+```powershell
+Set-Location "auth-service"
+$env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-17.0.19.10-hotspot"
+$env:Path = "$env:JAVA_HOME\bin;$env:Path"
+.\mvnw.cmd spring-boot:run
+```
+
+Test registration through gateway (port 8081):
+```powershell
+Invoke-RestMethod -Method Post -Uri "http://localhost:8081/v1/auth/register" `
+  -ContentType "application/json" `
+  -Body '{"username":"testuser","password":"Test@1234","email":"test@example.com"}'
+```
+
+Test auth-service directly (port 8082):
+```powershell
+Invoke-RestMethod -Method Post -Uri "http://localhost:8082/v1/auth/register" `
+  -ContentType "application/json" `
+  -Body '{"username":"testuser","password":"Test@1234","email":"test@example.com"}'
+```
+
+> **Note:** All services use a fixed `eureka.instance.instance-id` so only one instance per service will appear in Eureka (no stale `:0` entries). If you ever see a duplicate `:0` entry in Eureka, stop the old process and wait ~90 seconds for the lease to expire, or restart Eureka Server.
 
 
 ### Screenshots
